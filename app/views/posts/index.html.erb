@@ -1,0 +1,46 @@
+<% provide(:title,'Blog-post') %>
+<%flash.each do |key,value| %>
+<div class="alert alert-<%=key%>"><%=value%></div>
+<%end%>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span8">
+		
+<% @posts.each do |p| %>
+<h1><%=image_tag p.photo.url,class:'gravatar1 img-polaroid'%></h1>
+<%=image_tag 'cal.png',style:'float:right' %><b><p style="float:right;margin-right:-55px;padding:5px;"><% @date = p.created_at  %><%= @date.strftime("%B")%></b></p> 
+<b><p style="float:right;margin-right:-50px;margin-top:40px;font-size:1.5em"><% @date = p.created_at  %><%= @date.strftime("%d")%></b></p> 
+<h1 style="text-align:left;font-size:25px"><%=p.title%></h1>
+
+<p style="line-wrap"><%=p.showpost%></p>
+<%=link_to "Read more",p,class:'btn btn-medium btn-info pull-right'%>
+<p style="margin-bottom:10px"><b>Posted <%= time_ago_in_words(p.created_at) %> ago</b></p>
+<p style="margin-bottom:10px;"><b>Comments: <i class="icon-comment"></i> <%= p.comments.count %></b></p>
+
+<% if signed_in? && current_user.admin? %>
+<%=link_to "Edit",edit_post_path(p),class:'btn btn-small btn-success'%>
+<%=link_to "Delete",p,:method=>:delete,data:{confirm:"You sure?"},class:'btn btn-small btn-success'%>
+<%end%>
+<p style="border-bottom:2px dotted #ccc;padding:5px"></p>
+<%end%>
+</div>
+<div class="span4">
+<% if !signed_in? %>
+		<%=render 'layouts/signin'%>
+		<%else%>
+		<h1><%=image_tag current_user.photo.url,class:'gravatar'%></h1>
+			<%=current_user.name%>
+			<%=link_to "Create Blog",posts_new_path,class:'btn btn-medium btn-inverse' %>
+			<%end%>
+			
+	</div>
+	<div class="span4">
+	<%=render 'layouts/fblike' %>
+</div>
+
+</div>
+
+<%= will_paginate %>
+<%=render 'layouts/abtauth' %>
+

@@ -1,0 +1,34 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate @users %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span8">
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      
+      <%=image_tag user.photo.url,class:'gravatar'%>
+      <%= link_to user.name, user %>
+      <% if current_user.admin?&&(user!=current_user)%>
+    | <%= link_to "delete", user, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+  <% end %>
+    </li>
+  <% end %>
+</ul>
+</div>
+<div class="span3">
+<% if !signed_in? %>
+    <%=render 'layouts/signin'%>
+    <%else%>
+    <h1><%=image_tag current_user.photo.url,class:'gravatar'%></h1>
+      <%=current_user.name%>
+      <%=link_to "Create Blog",posts_new_path,class:'btn btn-small btn-inverse' %>
+      <%end%>
+      
+  </div>
+  <%=render 'layouts/fblike' %>
+</div>
+<%= will_paginate @users%>

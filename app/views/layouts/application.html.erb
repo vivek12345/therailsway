@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=my_test(yield(:title))%></title>
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%=render 'layouts/shim'%>
+  
+</head>
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<ul id="nav5">
+  <li class="home"><a href="#"><%=image_tag('myfb.png') %></a></li>
+  <li class="home"><a href="#"><%=image_tag('twit2.png') %></a></li>
+  <li class="home"><a href="#"><%=image_tag('youtube_icon.png') %></a></li>
+  <li class="home"><a href="#"></a></li>
+  <li class="home"><a href="#"></a></li>
+  <li class="home"><a href="#"></a></li>
+</ul>
+<script type="text/javascript">
+            $(function() {
+                $('#nav5 a').animate({'marginLeft':'-85px'},1000);
+
+                $('#nav5 > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-2px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-85px'},200);
+                    }
+                );
+            });
+        </script>
+<%=render 'layouts/header'%>
+<%=render 'layouts/myimage'%>
+	<div class="container">
+<%= yield %>
+<%=render 'layouts/footer'%>
+<%=debug(params) %>
+</div>
+</body>
+</html>

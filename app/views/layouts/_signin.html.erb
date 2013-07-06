@@ -1,0 +1,11 @@
+<button class="btn btn-large btn-block btn-inverse" style="margin-bottom:10px;">Sign-in</button>
+		<%=form_for(:sessions,url:sessions_path) do |f|%>
+		<%=f.label :email %>
+		<%=f.text_field :email,autofocus:'true' %>
+		<%=f.label :password %>
+		<%=f.password_field :password %>
+		
+
+		<%=f.submit "Log in",class:"btn btn-large btn-primary"%>
+		<%end%>
+		New user?<%=link_to "Sign up now",signup_path%>

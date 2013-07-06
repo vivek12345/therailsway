@@ -1,0 +1,54 @@
+<% provide(:title,@post.title) %>
+<%flash.each do|key,value|%>
+<div class="alert alert-<%=key%>"><%=value%></div>
+<%end%>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span9" style="background:lightgrey;border-radius:5px;padding:15px;margin-left:-20px">
+<!--<div class="row">
+	<aside class="span8" style="background:lightgrey;border-radius:5px;padding:15px">
+		<section>-->
+			
+			<h1><%=image_tag @post.photo.url,class:'gravatar1 img-polaroid'%></h1>
+			<h1 style="text-align:left;font-size:25px"><%=@post.title%></h1>
+			<%=simple_format @post.body%>
+	<p style="margin-bottom:10px"><b>Posted <%= time_ago_in_words(@post.created_at) %> ago</b></p>
+
+		<!--</section>
+
+	</aside>-->
+	
+</div>
+<div class="span3">
+<% if !signed_in? %>
+		<%=render 'layouts/signin'%>
+		<%else%>
+		<h1><%=image_tag current_user.photo.url,class:'gravatar'%></h1>
+			<%=current_user.name%>
+			<%=link_to "Create Blog",posts_new_path,class:'btn btn-small btn-inverse' %>
+			<%end%>
+			
+	</div>
+	<div class="span3">
+	<%=render 'layouts/fblike' %>
+</div>
+
+</div>
+
+</div>
+<%=render 'layouts/commentsadd' %>
+<div class="row">
+	<div class="span8" style="padding:15px">
+		<% if @post.previous_post %>
+		<%=link_to "Previous Post",@post.previous_post,style:'float:left',class:'btn btn-warning' %>
+		<%end%>
+
+		<a style="text-align:center;margin-left:170px" href="<%=root_url %>"><button class="btn btn-primary">Home</button></a>
+		<% if @post.next_post %>
+		<%=link_to "Next Post",@post.next_post,style:'float:right',class:'btn btn-warning' %>
+		<%end%>
+	</div>
+</div>
+
+
+

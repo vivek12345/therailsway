@@ -1,0 +1,13 @@
+<% provide(:title,@user.name) %>
+<%flash.each do|key,value|%>
+<div class="alert alert-<%=key%>"><%=value%></div>
+<%end%>
+<div class="row">
+	<aside class="span4">
+		<section>
+			<!--<h1><%=gravatar_for @user%></h1>-->
+			<h1><%=image_tag @user.photo.url,class:'gravatar'%></h1>
+			<h1><%=@user.name%></h1>
+		</section>
+	</aside>
+</div>

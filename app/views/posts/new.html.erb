@@ -1,0 +1,31 @@
+<% provide(:title,'Blog-posts') %>
+<h1>Create a blog post</h1>
+<div class="container-fluid">
+	<div class="row-fluid">
+	<div class="span7" style="float:left">
+		<%=form_for @post do |p| %>
+		
+		<%=p.label :title %>
+		<%=p.text_field :title,autofocus:'true' %>
+		<%=p.label :body %>
+		<%=p.text_area :body,rows:'25',cols:'20'%>
+		<%=p.label :ToDisplay %>
+		<%=p.text_area :showpost,rows:'15',cols:'20' %>
+		<%=p.file_field :photo %>
+		<%=p.submit "Create Post",class:'btn btn-large btn-primary'%>
+		<%end%>
+	</div>
+	<div class="span4 offset1">
+	<% if signed_in? %>
+	<h1><%=image_tag current_user.photo.url,class:'gravatar'%></h1>
+			<%=current_user.name%>
+			<%else%>
+			<%=render 'layouts/signin' %>
+		<%end%>
+		</div>
+		
+
+	</div>
+
+
+</div> 

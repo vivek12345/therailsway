@@ -1,0 +1,27 @@
+<head>
+<script>
+$(function(){
+  $('#myCarousel').carousel();
+});
+</script>
+</head>
+	<div id="myCarousel" class="carousel slide">
+    <!--
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>-->
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><%=image_tag("terrain-planet-land-sun-1280x720.jpg",style:'width:1000px;height:300px;margin:0 auto;border:5px solid #000')%>
+    </div>
+    <div class="item"><%=image_tag("windows-8-piano-1280x720.jpg",style:'width:1000px;height:300px;margin:0 auto;border:5px solid #000')%></div>
+    <div class="item"><%=image_tag("windows-nature-wallpaper-1280x720.jpg",style:'width:1000px;height:300px;margin:0 auto;border:5px solid #000')%></div>
+  </div>
+  <div class="item"><%=image_tag("/mydesktop.jpg",style:'width:1000px;height:300px;margin:0 auto;border:5px solid #000')%></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
