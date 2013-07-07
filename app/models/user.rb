@@ -12,10 +12,7 @@ class User < ActiveRecord::Base
 	validates :password_confirmation,presence: true
 
 
-	def makeadmin
-		self.update_attributes(:admin,true)
-		
-	end
+	
 	private
 	def create_remember_token
 		self.remember_token=SecureRandom.urlsafe_base64
