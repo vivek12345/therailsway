@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 	def destroy
 		sign_out
 		flash[:success]="Successfully signed-out"
-		render root_url
+		redirect_to root_url
 	end
 	def signed_in_user
       redirect_to signin_url, notice: "Please sign in." unless signed_in?
