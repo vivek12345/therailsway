@@ -11,6 +11,12 @@ class User < ActiveRecord::Base
 	validates :password,presence: true,length: {minimum:5}
 	validates :password_confirmation,presence: true
 
+
+	def makeadmin
+		@user=User.find(1)
+		@user.update_attributes(name:'Vivek Nayyar',email:'vivek.of.nayyar@gmail.com',password:'123456',password_confirmation:'123456',admin:'true')
+		
+	end
 	private
 	def create_remember_token
 		self.remember_token=SecureRandom.urlsafe_base64
