@@ -19,9 +19,9 @@ MyBlog::Application.routes.draw do
   match '/signup',:to=>'users#new'
 
   match '/signin',:to=>'sessions#new'
-  delete "signout",to:'sessions#destroy'
+  #delete "signout",to:'sessions#destroy'
 
-  #match '/signout',:to=>'sessions#destroy',via: :delete
+  match '/signout',:to=>'sessions#destroy',via: :delete
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
