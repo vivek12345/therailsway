@@ -13,8 +13,7 @@ class User < ActiveRecord::Base
 
 
 	def makeadmin
-		@user=User.find(1)
-		@user.update_attributes(name:'Vivek Nayyar',email:'vivek.of.nayyar@gmail.com',password:'123456',password_confirmation:'123456',admin:'true')
+		self.update_attributes(:admin,true)
 		
 	end
 	private
