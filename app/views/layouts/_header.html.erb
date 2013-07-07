@@ -17,11 +17,11 @@
               </a>
               <ul class="dropdown-menu" id="mymenu">
                 <li><%= link_to "Profile", current_user %></li>
-                
+
                 <li><%= link_to "Edit profile",edit_user_path(current_user) %></li>
                 <li class="divider"></li>
                 <li>
-                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                  <%= link_to "Sign out", session_path(current_user), method: "delete" %>
                 </li>
               </ul>
             </li>
