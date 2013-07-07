@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+	before_filter :signed_in_user, only: [:index,:edit, :update,:show]
 	def new
 	end
 	def create
@@ -16,7 +17,7 @@ class SessionsController < ApplicationController
 	def destroy
 		sign_out
 		flash[:success]="Successfully signed-out"
-		redirect_to root_url
+		render new
 	end
 	def signed_in_user
       redirect_to signin_url, notice: "Please sign in." unless signed_in?
