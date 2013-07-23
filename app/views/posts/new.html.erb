@@ -11,13 +11,14 @@
 		<%=p.text_area :body,rows:'25',cols:'20'%>
 		<%=p.label :ToDisplay %>
 		<%=p.text_area :showpost,rows:'15',cols:'20' %>
-		<%=p.file_field :photo %>
+		<!--<%=p.file_field :photo %>-->
+		<%= p.attachinary_file_field :avatar %>
 		<%=p.submit "Create Post",class:'btn btn-large btn-primary'%>
 		<%end%>
 	</div>
 	<div class="span4 offset1">
 	<% if signed_in? %>
-	<h1><%=image_tag current_user.photo.url,class:'gravatar'%></h1>
+	<h1><%=cl_image_tag(current_user.avatar.path,class:'gravatar')%></h1>
 			<%=current_user.name%>
 			<%else%>
 			<%=render 'layouts/signin' %>

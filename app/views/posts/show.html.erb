@@ -9,7 +9,12 @@
 	<aside class="span8" style="background:lightgrey;border-radius:5px;padding:15px">
 		<section>-->
 			
-			<h1><%=image_tag @post.photo.url,class:'gravatar1 img-polaroid'%></h1>
+			<h1>
+			<% if @post.avatar? %>
+    <%= cl_image_tag(@post.avatar.path,class:'gravatar1 img-polaroid') %>
+<% end %>
+			
+			</h1>
 			<h1 style="text-align:left;font-size:25px"><%=@post.title%></h1>
 			<%=simple_format @post.body%>
 	<p style="margin-bottom:10px"><b>Posted <%= time_ago_in_words(@post.created_at) %> ago</b></p>
@@ -23,7 +28,7 @@
 <% if !signed_in? %>
 		<%=render 'layouts/signin'%>
 		<%else%>
-		<h1><%=image_tag current_user.photo.url,class:'gravatar'%></h1>
+		<h1><%=cl_image_tag(current_user.avatar.path,class:'gravatar')%></h1>
 			<%=current_user.name%>
 			<%=link_to "Create Blog",posts_new_path,class:'btn btn-small btn-inverse' %>
 			<%end%>

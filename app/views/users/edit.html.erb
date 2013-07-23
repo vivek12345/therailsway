@@ -12,7 +12,8 @@
 		<%=f.password_field :password%>
 		<%=f.label :password_confirmation,"Confirmation"%>
 		<%=f.password_field :password_confirmation%>
-		<%=f.file_field :photo %>
+		<!--<%=f.file_field :photo %>-->
+		<%= f.attachinary_file_field :avatar %>
 		<%=f.submit "Save changes",class:"btn btn-large btn-primary" %>
 		
 		<%end%>

@@ -2,6 +2,7 @@ MyBlog::Application.routes.draw do
   get "posts/new"
 
   get "posts/show"
+  mount Attachinary::Engine => "/attachinary"
 
   resources :users
   resources :posts do
