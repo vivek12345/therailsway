@@ -1,0 +1,10 @@
+<h3>Recent posts</h3>
+<div class="myscroll">
+<%@posts.each do |post| %>
+
+	<ol style="background:#fff;padding:10px;">
+		<span><%=link_to post.title,post %></span><br>
+		<span>By:<%=link_to post.user.name,post.user %></span><br>
+	</ol>
+	<%end%>
+	</div>

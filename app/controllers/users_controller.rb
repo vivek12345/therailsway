@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   end
   def show
   	@user=User.find(params[:id])
+    @posts=@user.posts.paginate(page:params[:page])
     #flash[:success]="Welcome to mysite #{@user.name}"
   end
   def create
@@ -41,6 +42,20 @@ class UsersController < ApplicationController
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
     redirect_to users_url
+  end
+
+  def following
+    @title = "Following"
+    @user = User.find(params[:id])
+    @users = @user.followed_users.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @user = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render 'show_follow'
   end
   private
 

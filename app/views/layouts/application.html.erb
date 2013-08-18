@@ -3,14 +3,19 @@
 <head>
   <title><%=my_test(yield(:title))%></title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  
+
   <%= stylesheet_link_tag "application", media: "all" %>
   <%= stylesheet_link_tag "custom", media: "all" %>
+  
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "bootstrap" %>
   <%= javascript_include_tag "jquery" %>
   <%= javascript_include_tag "bootstrap-carousel" %>
   <%= javascript_include_tag "bootstrap-transition" %>
   <%= javascript_include_tag "jquery_ujs" %>
+  
+  
 
   <%= cloudinary_js_config %>
   

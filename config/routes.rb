@@ -4,11 +4,17 @@ MyBlog::Application.routes.draw do
   get "posts/show"
   mount Attachinary::Engine => "/attachinary"
 
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :posts do
     resources :comments
   end
   resources :sessions,only:[:new,:create,:destroy]
+  resources :posts, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
 
   #root :to => 'my_login#home'
   root :to => 'posts#index'

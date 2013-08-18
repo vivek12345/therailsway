@@ -18,6 +18,7 @@
 			<h1 style="text-align:left;font-size:25px"><%=@post.title%></h1>
 			<%=simple_format @post.body%>
 	<p style="margin-bottom:10px"><b>Posted <%= time_ago_in_words(@post.created_at) %> ago</b></p>
+	<p style="margin-bottom:10px"><b>By <%= link_to @post.user.name,@post.user %> </b></p>
 
 		<!--</section>
 

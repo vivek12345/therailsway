@@ -1,0 +1,7 @@
+<li>
+<%= cl_image_tag(post.avatar.path,class:'gravatar1 img-polaroid') %>
+  <span class="content"><%=link_to post.title,post %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(post.created_at) %> ago.
+  </span>
+</li>

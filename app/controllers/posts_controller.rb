@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 	before_filter :signed_in_user, only: [:edit,:update,:destroy,:new]
   def new
-  	@post=Post.new
+  	#@post=Post.new
+    @post=current_user.posts.build
   end
 
   def show
@@ -9,7 +10,8 @@ class PostsController < ApplicationController
     #@posts=Post.paginate(page: params[:page],:per_page => 3,:order=>'created_at DESC')
   end
   def create
-  	@post=Post.new(params[:post])
+  	#@post=Post.new(params[:post])
+    @post=current_user.posts.build(params[:post])
   	if @post.save
   		flash[:success]="Post created successfully"
   		redirect_to @post
