@@ -2,29 +2,27 @@
 <%flash.each do|key,value|%>
 <div class="alert alert-<%=key%>"><%=value%></div>
 <%end%>
+
 <div class="container-fluid">
 	<div class="row-fluid">
-		<div class="span9" style="background:lightgrey;border-radius:5px;padding:15px;margin-left:-20px">
-<!--<div class="row">
-	<aside class="span8" style="background:lightgrey;border-radius:5px;padding:15px">
-		<section>-->
+		<div class="span9" style="background:WHITE;border-radius:5px;padding:15px;margin-left:-20px;border:2px solid #000">
+
 			
-			<h1>
+			<!--h1>
 			<% if @post.avatar? %>
     <%= cl_image_tag(@post.avatar.path,class:'gravatar1 img-polaroid') %>
 <% end %>
 			
-			</h1>
+			</h1-->
 			<h1 style="text-align:left;font-size:25px"><%=@post.title%></h1>
-			<%=simple_format @post.body%>
+		
+			<%=@post.body.html_safe%>
 	<p style="margin-bottom:10px"><b>Posted <%= time_ago_in_words(@post.created_at) %> ago</b></p>
 	<p style="margin-bottom:10px"><b>By <%= link_to @post.user.name,@post.user %> </b></p>
-
-		<!--</section>
-
-	</aside>-->
 	
 </div>
+
+
 <div class="span3">
 <% if !signed_in? %>
 		<%=render 'layouts/signin'%>

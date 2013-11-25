@@ -5,7 +5,7 @@ $(function(){
 });
 </script>
 </head>
-	<div id="myCarousel" class="carousel slide">
+	<div id="myCarousel" class="carousel slide" style="min-width:1000px;">
     <!--
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -13,11 +13,11 @@ $(function(){
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>-->
   <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item"><%=image_tag("terrain-planet-land-sun-1280x720.jpg",style:'width:1000px;height:300px;margin:0 auto;border:5px solid #000')%>
+  <div class="carousel-inner" style="min-width:1000px;">
+    <div class="active item"><%=image_tag("terrain-planet-land-sun-1280x720.jpg",style:'min-width:1000px;height:300px;margin:0 auto;border:5px solid #000')%>
     </div>
-    <div class="item"><%=image_tag("windows-8-piano-1280x720.jpg",style:'width:1000px;height:300px;margin:0 auto;border:5px solid #000')%></div>
-    <div class="item"><%=image_tag("windows-nature-wallpaper-1280x720.jpg",style:'width:1000px;height:300px;margin:0 auto;border:5px solid #000')%></div>
+    <div class="item"><%=image_tag("windows-8-piano-1280x720.jpg",style:'min-width:1000px;height:300px;margin:0 auto;border:5px solid #000')%></div>
+    <div class="item"><%=image_tag("windows-nature-wallpaper-1280x720.jpg",style:'min-width:1000px;height:300px;margin:0 auto;border:5px solid #000')%></div>
   </div>
 
   <!-- Carousel nav -->

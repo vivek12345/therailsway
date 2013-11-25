@@ -5,10 +5,11 @@
 		<%=f.label :title %>
 		<%=f.text_field :title %>
 		<%=f.label :body %>
-		<%=f.text_area :body,rows:'25',cols:'20' %>
+		<%=tinymce%>
+		<%=f.text_area :body,rows:'25',cols:'20',:class=>"tinymce" %>
 		<%=f.label :ToDisplay %>
 		<%=f.text_area :showpost,rows:'15',cols:'20' %>
-		<!--<%=f.file_field :photo %>-->
+		
 		<%= f.attachinary_file_field :avatar %>
 		<%=f.submit "Save changes",class:'btn btn-large btn-primary' %>
 		<%end%>

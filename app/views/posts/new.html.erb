@@ -1,4 +1,5 @@
 <% provide(:title,'Blog-posts') %>
+<%= tinymce_assets %>
 <script>
 $('#idbutton').click(funtion(){
 		var progress = setInterval(function() 
@@ -31,12 +32,11 @@ $('#idbutton').click(funtion(){
 		<%=p.label :title %>
 		<%=p.text_field :title,autofocus:'true' %>
 		<%=p.label :body %>
-		<%=p.text_area :body,rows:'25',cols:'20'%>
+		<%=tinymce%>
+		<%=p.text_area :body,rows:'25',cols:'20',:class=>"tinymce"%>
 		<%=p.label :ToDisplay %>
 		<%=p.text_area :showpost,rows:'15',cols:'20' %>
-		
 		<%= p.attachinary_file_field :avatar%>
-		
 		<%=p.submit "Create Post",class:'btn btn-large btn-primary'%>
 		<%end%>
 	</div>

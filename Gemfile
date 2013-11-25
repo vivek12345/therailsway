@@ -8,13 +8,15 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'cloudinary'
 gem 'attachinary'
+gem 'newrelic_rpm'
+gem 'tinymce-rails'
 
 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 #group :development, :test do
  # gem 'rspec-rails', '2.11.0'
   

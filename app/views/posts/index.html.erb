@@ -15,7 +15,7 @@
 </h1>
 <%=image_tag 'cal.png',style:'float:right' %><b><p style="float:right;margin-right:-65px;padding:5px;"><% @date = p.created_at  %><%= @date.strftime("%B")%></b></p> 
 <b><p style="float:right;margin-right:-50px;margin-top:40px;font-size:1.5em"><% @date = p.created_at  %><%= @date.strftime("%d")%></b></p> 
-<h1 style="text-align:left;font-size:25px"><%=p.title%></h1>
+<h1 style="text-align:left;font-size:25px;"><%=p.title%></h1>
 
 <p style="line-wrap"><%=p.showpost%></p>
 <%=link_to "Read more",p,class:'btn btn-medium btn-info pull-right'%>

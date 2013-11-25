@@ -19,5 +19,6 @@
 //= require jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
+//= require tinymce
 
 

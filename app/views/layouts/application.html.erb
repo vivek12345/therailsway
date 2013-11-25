@@ -14,6 +14,7 @@
   <%= javascript_include_tag "bootstrap-carousel" %>
   <%= javascript_include_tag "bootstrap-transition" %>
   <%= javascript_include_tag "jquery_ujs" %>
+
   
   
 
@@ -21,6 +22,8 @@
   
 
   <%= csrf_meta_tags %>
+   <script src="https://hub.loginradius.com/include/js/LoginRadius.js" ></script>
+<script type="text/javascript">      var options={};      options.login=true;         LoginRadius_SocialLogin.util.ready(function () { $ui = LoginRadius_SocialLogin.lr_login_settings;$ui.interfacesize = "";$ui.apikey = "b37a8d4d-4bb7-4781-8d49-3c40cce4d0ec";$ui.callback=""; $ui.lrinterfacecontainer ="interfacecontainerdiv"; LoginRadius_SocialLogin.init(options);  }); </script>
   <%=render 'layouts/shim'%>
   
 </head>
