@@ -193,7 +193,7 @@ input {
   position:fixed;
   margin:0;
   padding:0;
-  top:150px;
+  top:250px;
   left:0;
   z-index:999;
   list-style:none;
@@ -293,5 +293,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 }
 .myscroll
 {
-  overflow-y:scroll;
+  //overflow-y:scroll;
+  height:300px;
+
 }

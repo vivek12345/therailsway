@@ -16,7 +16,7 @@ gem 'tinymce-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
+gem 'sqlite3'
 #group :development, :test do
  # gem 'rspec-rails', '2.11.0'
   
@@ -26,7 +26,9 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
 end
 group :production do
+	gem 'sqlite3'
 	gem 'pg', '0.12.2'
+
 end
 
 

@@ -230,7 +230,7 @@ $.Widget.prototype = {
 };
 
 })( jQuery );
-Hide details
+/*Hide details
 Change log
 r3692 by scott.gonzalez on Jan 17, 2010   Diff
 Widget: _create() doesn't actually take
@@ -243,4 +243,4 @@ Older revisions
 All revisions of this file
 File info
 Size: 5985 bytes, 232 lines
-View raw file
+View raw file*/

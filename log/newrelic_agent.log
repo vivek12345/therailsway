@@ -178,3 +178,160 @@
 [10/13/13 19:53:18 +0530 user (5524)] INFO : Finished instrumentation
 [10/13/13 19:53:18 +0530 user (5524)] WARN : Failed to determine processor count, assuming 1
 [10/13/13 19:53:23 +0530 user (5524)] INFO : Doing deferred dependency-detection before Rack startup
+[11/25/13 15:17:03 +0530 user (5908)] INFO : Starting the New Relic agent in "production" environment.
+[11/25/13 15:17:03 +0530 user (5908)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "production" section of your newrelic.yml.
+[11/25/13 15:17:03 +0530 user (5908)] INFO : Reading configuration from config/newrelic.yml
+[11/25/13 15:17:04 +0530 user (5908)] INFO : Enabling the Request Sampler.
+[11/25/13 15:17:04 +0530 user (5908)] INFO : Environment: production
+[11/25/13 15:17:04 +0530 user (5908)] INFO : Dispatcher: webrick
+[11/25/13 15:17:04 +0530 user (5908)] INFO : Application: My Application
+[11/25/13 15:17:06 +0530 user (5908)] INFO : Installing ActiveRecord instrumentation
+[11/25/13 15:17:06 +0530 user (5908)] INFO : Installing Net instrumentation
+[11/25/13 15:17:06 +0530 user (5908)] INFO : Installing deferred Rack instrumentation
+[11/25/13 15:17:06 +0530 user (5908)] INFO : Installing Rails 3 Controller instrumentation
+[11/25/13 15:17:06 +0530 user (5908)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/25/13 15:17:07 +0530 user (5908)] INFO : Installing Rails3 Error instrumentation
+[11/25/13 15:17:07 +0530 user (5908)] INFO : Finished instrumentation
+[11/25/13 15:17:07 +0530 user (5908)] WARN : Failed to determine processor count, assuming 1
+[11/25/13 15:17:08 +0530 user (5908)] INFO : Reporting to: https://rpm.newrelic.com/accounts/448019/applications/2743723
+[11/25/13 15:17:20 +0530 user (5908)] INFO : Doing deferred dependency-detection before Rack startup
+[11/25/13 15:21:47 +0530 user (5332)] INFO : Starting the New Relic agent in "production" environment.
+[11/25/13 15:21:47 +0530 user (5332)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "production" section of your newrelic.yml.
+[11/25/13 15:21:47 +0530 user (5332)] INFO : Reading configuration from config/newrelic.yml
+[11/25/13 15:21:47 +0530 user (5332)] INFO : Enabling the Request Sampler.
+[11/25/13 15:21:47 +0530 user (5332)] INFO : Environment: production
+[11/25/13 15:21:47 +0530 user (5332)] INFO : Dispatcher: webrick
+[11/25/13 15:21:47 +0530 user (5332)] INFO : Application: My Application
+[11/25/13 15:21:49 +0530 user (5332)] INFO : Installing ActiveRecord instrumentation
+[11/25/13 15:21:49 +0530 user (5332)] INFO : Installing Net instrumentation
+[11/25/13 15:21:49 +0530 user (5332)] INFO : Installing deferred Rack instrumentation
+[11/25/13 15:21:49 +0530 user (5332)] INFO : Installing Rails 3 Controller instrumentation
+[11/25/13 15:21:49 +0530 user (5332)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/25/13 15:21:50 +0530 user (5332)] INFO : Installing Rails3 Error instrumentation
+[11/25/13 15:21:50 +0530 user (5332)] INFO : Finished instrumentation
+[11/25/13 15:21:50 +0530 user (5332)] WARN : Failed to determine processor count, assuming 1
+[11/25/13 15:21:51 +0530 user (5332)] INFO : Reporting to: https://rpm.newrelic.com/accounts/448019/applications/2743723
+[11/25/13 15:21:59 +0530 user (5332)] INFO : Doing deferred dependency-detection before Rack startup
+[11/25/13 15:34:03 +0530 user (5132)] INFO : Starting the New Relic agent in "production" environment.
+[11/25/13 15:34:03 +0530 user (5132)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "production" section of your newrelic.yml.
+[11/25/13 15:34:03 +0530 user (5132)] INFO : Reading configuration from config/newrelic.yml
+[11/25/13 15:34:03 +0530 user (5132)] INFO : Enabling the Request Sampler.
+[11/25/13 15:34:03 +0530 user (5132)] INFO : Environment: production
+[11/25/13 15:34:03 +0530 user (5132)] INFO : Dispatcher: webrick
+[11/25/13 15:34:03 +0530 user (5132)] INFO : Application: My Application
+[11/25/13 15:34:05 +0530 user (5132)] INFO : Installing ActiveRecord instrumentation
+[11/25/13 15:34:05 +0530 user (5132)] INFO : Installing Net instrumentation
+[11/25/13 15:34:05 +0530 user (5132)] INFO : Installing deferred Rack instrumentation
+[11/25/13 15:34:05 +0530 user (5132)] INFO : Installing Rails 3 Controller instrumentation
+[11/25/13 15:34:05 +0530 user (5132)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/25/13 15:34:05 +0530 user (5132)] INFO : Installing Rails3 Error instrumentation
+[11/25/13 15:34:05 +0530 user (5132)] INFO : Finished instrumentation
+[11/25/13 15:34:05 +0530 user (5132)] WARN : Failed to determine processor count, assuming 1
+[11/25/13 15:34:07 +0530 user (5132)] INFO : Reporting to: https://rpm.newrelic.com/accounts/448019/applications/2743723
+[11/25/13 15:34:13 +0530 user (5132)] INFO : Doing deferred dependency-detection before Rack startup
+[11/25/13 15:36:28 +0530 user (4216)] INFO : Starting the New Relic agent in "development" environment.
+[11/25/13 15:36:28 +0530 user (4216)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/25/13 15:36:28 +0530 user (4216)] INFO : Reading configuration from config/newrelic.yml
+[11/25/13 15:36:28 +0530 user (4216)] INFO : New Relic Agent Developer Mode enabled.
+[11/25/13 15:36:28 +0530 user (4216)] INFO : Enabling the Request Sampler.
+[11/25/13 15:36:28 +0530 user (4216)] INFO : Environment: development
+[11/25/13 15:36:28 +0530 user (4216)] INFO : Dispatcher: webrick
+[11/25/13 15:36:28 +0530 user (4216)] INFO : Application: My Application
+[11/25/13 15:36:28 +0530 user (4216)] WARN : Agent configured not to send data in this environment.
+[11/25/13 15:36:30 +0530 user (4216)] INFO : Installing ActiveRecord instrumentation
+[11/25/13 15:36:30 +0530 user (4216)] INFO : Installing Net instrumentation
+[11/25/13 15:36:30 +0530 user (4216)] INFO : Installing deferred Rack instrumentation
+[11/25/13 15:36:30 +0530 user (4216)] INFO : Installing Rails 3 Controller instrumentation
+[11/25/13 15:36:30 +0530 user (4216)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/25/13 15:36:30 +0530 user (4216)] INFO : Installing Rails3 Error instrumentation
+[11/25/13 15:36:30 +0530 user (4216)] INFO : Finished instrumentation
+[11/25/13 15:36:30 +0530 user (4216)] WARN : Failed to determine processor count, assuming 1
+[11/25/13 15:36:36 +0530 user (4216)] INFO : Doing deferred dependency-detection before Rack startup
+[12/19/13 04:04:35 +0530 user (4772)] INFO : Starting the New Relic agent in "development" environment.
+[12/19/13 04:04:36 +0530 user (4772)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/19/13 04:04:36 +0530 user (4772)] INFO : Reading configuration from config/newrelic.yml
+[12/19/13 04:04:36 +0530 user (4772)] INFO : New Relic Agent Developer Mode enabled.
+[12/19/13 04:04:36 +0530 user (4772)] INFO : Enabling the Request Sampler.
+[12/19/13 04:04:36 +0530 user (4772)] INFO : Environment: development
+[12/19/13 04:04:36 +0530 user (4772)] INFO : Dispatcher: webrick
+[12/19/13 04:04:36 +0530 user (4772)] INFO : Application: My Application
+[12/19/13 04:04:36 +0530 user (4772)] WARN : Agent configured not to send data in this environment.
+[12/19/13 04:04:39 +0530 user (4772)] INFO : Installing ActiveRecord instrumentation
+[12/19/13 04:04:39 +0530 user (4772)] INFO : Installing Net instrumentation
+[12/19/13 04:04:39 +0530 user (4772)] INFO : Installing deferred Rack instrumentation
+[12/19/13 04:04:39 +0530 user (4772)] INFO : Installing Rails 3 Controller instrumentation
+[12/19/13 04:04:39 +0530 user (4772)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/19/13 04:04:40 +0530 user (4772)] INFO : Installing Rails3 Error instrumentation
+[12/19/13 04:04:40 +0530 user (4772)] INFO : Finished instrumentation
+[12/19/13 04:04:40 +0530 user (4772)] WARN : Failed to determine processor count, assuming 1
+[12/19/13 04:04:46 +0530 user (4772)] INFO : Doing deferred dependency-detection before Rack startup
+[12/19/13 04:32:24 +0530 user (5412)] INFO : Starting the New Relic agent in "development" environment.
+[12/19/13 04:32:24 +0530 user (5412)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/19/13 04:32:24 +0530 user (5412)] INFO : Reading configuration from config/newrelic.yml
+[12/19/13 04:32:25 +0530 user (5412)] INFO : New Relic Agent Developer Mode enabled.
+[12/19/13 04:32:25 +0530 user (5412)] INFO : Enabling the Request Sampler.
+[12/19/13 04:32:25 +0530 user (5412)] INFO : Environment: development
+[12/19/13 04:32:25 +0530 user (5412)] INFO : Dispatcher: webrick
+[12/19/13 04:32:25 +0530 user (5412)] INFO : Application: My Application
+[12/19/13 04:32:25 +0530 user (5412)] WARN : Agent configured not to send data in this environment.
+[12/19/13 04:32:26 +0530 user (5412)] INFO : Installing ActiveRecord instrumentation
+[12/19/13 04:32:26 +0530 user (5412)] INFO : Installing Net instrumentation
+[12/19/13 04:32:26 +0530 user (5412)] INFO : Installing deferred Rack instrumentation
+[12/19/13 04:32:26 +0530 user (5412)] INFO : Installing Rails 3 Controller instrumentation
+[12/19/13 04:32:26 +0530 user (5412)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/19/13 04:32:26 +0530 user (5412)] INFO : Installing Rails3 Error instrumentation
+[12/19/13 04:32:26 +0530 user (5412)] INFO : Finished instrumentation
+[12/19/13 04:32:26 +0530 user (5412)] WARN : Failed to determine processor count, assuming 1
+[12/19/13 04:32:31 +0530 user (5412)] INFO : Doing deferred dependency-detection before Rack startup
+[12/25/13 06:03:01 +0530 user (5448)] INFO : Starting the New Relic agent in "development" environment.
+[12/25/13 06:03:01 +0530 user (5448)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/25/13 06:03:01 +0530 user (5448)] INFO : Reading configuration from config/newrelic.yml
+[12/25/13 06:03:02 +0530 user (5448)] INFO : New Relic Agent Developer Mode enabled.
+[12/25/13 06:03:02 +0530 user (5448)] INFO : Enabling the Request Sampler.
+[12/25/13 06:03:02 +0530 user (5448)] INFO : Environment: development
+[12/25/13 06:03:02 +0530 user (5448)] INFO : No known dispatcher detected.
+[12/25/13 06:03:02 +0530 user (5448)] INFO : Application: My Application
+[12/25/13 06:03:02 +0530 user (5448)] WARN : Agent configured not to send data in this environment.
+[12/25/13 06:03:03 +0530 user (5448)] INFO : Installing ActiveRecord instrumentation
+[12/25/13 06:03:03 +0530 user (5448)] INFO : Installing Net instrumentation
+[12/25/13 06:03:03 +0530 user (5448)] INFO : Installing deferred Rack instrumentation
+[12/25/13 06:03:03 +0530 user (5448)] INFO : Installing Rails 3 Controller instrumentation
+[12/25/13 06:03:03 +0530 user (5448)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/25/13 06:03:04 +0530 user (5448)] INFO : Installing Rails3 Error instrumentation
+[12/25/13 06:03:04 +0530 user (5448)] INFO : Finished instrumentation
+[12/25/13 06:03:04 +0530 user (5448)] WARN : Failed to determine processor count, assuming 1
+[12/25/13 06:20:43 +0530 user (436)] INFO : Starting the New Relic agent in "development" environment.
+[12/25/13 06:20:43 +0530 user (436)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/25/13 06:20:43 +0530 user (436)] INFO : Reading configuration from config/newrelic.yml
+[12/25/13 06:20:44 +0530 user (436)] INFO : New Relic Agent Developer Mode enabled.
+[12/25/13 06:20:44 +0530 user (436)] INFO : Enabling the Request Sampler.
+[12/25/13 06:20:44 +0530 user (436)] INFO : Environment: development
+[12/25/13 06:20:44 +0530 user (436)] INFO : No known dispatcher detected.
+[12/25/13 06:20:44 +0530 user (436)] INFO : Application: My Application
+[12/25/13 06:20:44 +0530 user (436)] WARN : Agent configured not to send data in this environment.
+[12/25/13 06:20:45 +0530 user (436)] INFO : Installing ActiveRecord instrumentation
+[12/25/13 06:20:45 +0530 user (436)] INFO : Installing Net instrumentation
+[12/25/13 06:20:45 +0530 user (436)] INFO : Installing deferred Rack instrumentation
+[12/25/13 06:20:45 +0530 user (436)] INFO : Installing Rails 3 Controller instrumentation
+[12/25/13 06:20:45 +0530 user (436)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/25/13 06:20:46 +0530 user (436)] INFO : Installing Rails3 Error instrumentation
+[12/25/13 06:20:46 +0530 user (436)] INFO : Finished instrumentation
+[12/25/13 06:20:46 +0530 user (436)] WARN : Failed to determine processor count, assuming 1
+[01/24/15 02:30:06 +0530 user (5772)] INFO : Starting the New Relic agent in "development" environment.
+[01/24/15 02:30:06 +0530 user (5772)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[01/24/15 02:30:06 +0530 user (5772)] INFO : Reading configuration from config/newrelic.yml
+[01/24/15 02:30:06 +0530 user (5772)] INFO : New Relic Agent Developer Mode enabled.
+[01/24/15 02:30:06 +0530 user (5772)] INFO : Enabling the Request Sampler.
+[01/24/15 02:30:06 +0530 user (5772)] INFO : Environment: development
+[01/24/15 02:30:06 +0530 user (5772)] INFO : Dispatcher: webrick
+[01/24/15 02:30:06 +0530 user (5772)] INFO : Application: My Application
+[01/24/15 02:30:06 +0530 user (5772)] WARN : Agent configured not to send data in this environment.
+[01/24/15 02:30:07 +0530 user (5772)] INFO : Installing ActiveRecord instrumentation
+[01/24/15 02:30:07 +0530 user (5772)] INFO : Installing Net instrumentation
+[01/24/15 02:30:07 +0530 user (5772)] INFO : Installing deferred Rack instrumentation
+[01/24/15 02:30:07 +0530 user (5772)] INFO : Installing Rails 3 Controller instrumentation
+[01/24/15 02:30:07 +0530 user (5772)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/24/15 02:30:08 +0530 user (5772)] INFO : Installing Rails3 Error instrumentation
+[01/24/15 02:30:08 +0530 user (5772)] INFO : Finished instrumentation
+[01/24/15 02:30:08 +0530 user (5772)] WARN : Failed to determine processor count, assuming 1
+[01/24/15 02:30:12 +0530 user (5772)] INFO : Doing deferred dependency-detection before Rack startup
