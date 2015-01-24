@@ -28,7 +28,8 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
 end
 group :production do
-	gem 'pg', '0.12.2'
+	gem 'pg', '0.17.1'
+	gem 'rails_12factor', '0.0.2'
 
 end
 
