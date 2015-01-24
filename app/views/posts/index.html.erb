@@ -13,7 +13,15 @@
     <%= cl_image_tag(p.avatar.path,class:'gravatar1 img-polaroid') %>
 <% end %>
 </h1>
-<%=image_tag 'cal.png',style:'float:right' %><b><p style="float:right;margin-right:-80px;padding:5px;"><% @date = p.created_at  %><%= @date.strftime("%B")%></b></p> 
+<div class="calendar">
+<%=image_tag 'cal.png',style:'float:right' %>
+<b>
+	<p style="float:right;margin-right:-71px;padding:5px;">
+		<% @date = p.created_at  %><%= @date.strftime("%B")%>
+
+	</p>
+</b>
+</div> 
 <b><p style="float:right;margin-right:-50px;margin-top:40px;font-size:1.5em"><% @date = p.created_at  %><%= @date.strftime("%d")%></b></p> 
 <h1 style="text-align:left;font-size:25px;"><%=p.title%></h1>
 
